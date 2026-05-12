@@ -1,0 +1,16 @@
+Supplier Account Tracking Update
+
+Add Supplier only creates the supplier record. It does not always mean the supplier has a login account.
+
+The Suppliers page now shows:
+- Account Status: Has Account / No Account
+- Username
+- Password changed / Waiting for password change
+- Last login date/time
+
+Owner actions:
+- Create Account: creates a Supplier login, generates username and temporary password, and forces password change.
+- Reset Password: generates a new temporary password and forces password change again.
+- Deactivate: deactivates the supplier and linked Supplier login account.
+
+Passwords are never displayed after creation/reset except the temporary password shown to the Owner in the success notification.
