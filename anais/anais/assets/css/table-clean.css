@@ -1,0 +1,63 @@
+/* ANAIS Clean Table Lines
+   Modern readable tables: no heavy grid lines, only light row separators.
+*/
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+thead tr {
+  background: #f9fafb;
+}
+
+th {
+  padding: 10px 14px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-2);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  border: none !important;
+  border-bottom: 1px solid var(--border) !important;
+  white-space: nowrap;
+}
+
+td {
+  padding: 11px 14px;
+  border: none !important;
+  border-bottom: 1px solid #edf0f3 !important;
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+tbody tr:last-child td {
+  border-bottom: none !important;
+}
+
+tbody tr:hover {
+  background: #f9fafb;
+}
+
+/* Keep low-stock highlight clean but visible */
+tr.low-stock td {
+  background: #fffbeb !important;
+}
+
+tr.low-stock td:first-child {
+  border-left: 3px solid var(--warning) !important;
+}
+
+/* Print pages can still use clean row separators */
+@media print {
+  th, td {
+    border-left: none !important;
+    border-right: none !important;
+  }
+}

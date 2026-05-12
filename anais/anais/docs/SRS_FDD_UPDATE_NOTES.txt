@@ -1,0 +1,36 @@
+ANAIS SRS / FDD UPDATE NOTES
+
+Account Management
+- Added Deactivate Account function.
+- Added Delete Account function. If an account has linked records, the system deactivates it instead of breaking records.
+- Account Management is mainly for viewing accounts and editing only role, branch, status, and contact/supplier details.
+- Usernames remain unique and are not edited from Account Management.
+- New accounts use auto-generated temporary passwords and are created as Inactive until approved by the Owner.
+- Added account filters by branch, role, and status.
+- Added contact number, email, and address fields.
+
+Dashboard
+- Recent Dashboard transactions now focus on Sales Transactions, not general stock movement type.
+- The Dashboard does not include Stock-In records in the recent sales table.
+- Recent Sales columns are ordered as Transaction Number, Product, Quantity, Branch, Total, Recorded By, and View Details.
+- Date and time are moved to the details/receipt view.
+
+Inventory
+- Stock-In and Stock-Out are inside the Inventory / Stock module.
+- Added car-part categories such as Engine Parts, Brake System, Suspension, Electrical, Lighting, Tires & Wheels, Interior Accessories, Exterior Accessories, Audio & Electronics, Oils & Fluids, Cleaning Supplies, Tools, and Others.
+- Added Barcode / QR Code field for easier product tracking.
+- Added Warranty Months for products and Warranty Until for stock-in entries.
+
+Stock-Out
+- Added customer ID number field for discount reference, such as Senior/PWD/Student ID.
+- Discount amount/percent remains supported.
+
+Reports
+- Added Sales History report.
+
+Purchase Orders
+- Added payment status, method, amount paid, and remarks.
+- Added damaged/wrong-item return recording.
+- Auto PO generation now groups low-stock products into one draft PO per supplier. If items are from both branches, the PO branch is set to Both.
+
+- Request Account was moved to the Employee/Staff login tab. Supplier registration remains on the Supplier tab using /anais/register_supplier.php.
